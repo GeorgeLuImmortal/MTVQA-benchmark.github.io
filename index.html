@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MMMU</title>
+  <title>MTVQA</title>
     <style>
         .hidden {
             display: none;
@@ -11,10 +11,10 @@
   <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <meta name="description"
-        content="A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI">
-  <meta name="keywords" content="MMMU, LMM, LMM Evaluation, Vision Language Model, Large Language Model, Large Multimodal Model, artificial intelligence, AI, AGI, artificial general intelligence">
+        content="MTVQA: Benchmarking Multilingual Text-Centric Visual Question Answering">
+  <meta name="keywords" content="MTVQA, LMM, LMM Evaluation, Vision Language Model, Large Language Model, Large Multimodal Model, artificial intelligence, AI, AGI, artificial general intelligence">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI</title>
+  <title> MTVQA: Benchmarking Multilingual Text-Centric Visual Question Answering</title>
 
   <link rel="icon" href="./static/images/mmmu_icon2.png">
 
@@ -85,7 +85,7 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
             <img src="static/images/mmmu_icon2.png" style="width:1em;vertical-align: middle" alt="Logo"/> 
-            <span class="mmmu" style="vertical-align: middle">MMMU</span>
+            <span class="mmmu" style="vertical-align: middle">MTVQA</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
             A Massive Multi-discipline Multimodal Understanding 
@@ -160,7 +160,7 @@
               <!-- PDF Link. -->
               <span class="link-block">
                 <!-- @PAN TODO: change links -->
-                <a href="https://arxiv.org/abs/2311.16502"
+                <a href="https://arxiv.org/abs/2405.11985"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -178,7 +178,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/MMMU/MMMU"
+                <a href="https://huggingface.co/datasets/MTVQA/MTVQA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -189,7 +189,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/MMMU-Benchmark/MMMU"
+                <a href="https://github.com/MTVQA-Benchmark/MTVQA"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -264,7 +264,7 @@
   <div class="container is-max-desktop">
         <div class="content has-text-centered">
           <img src="static/images/overview_mmlu.Jpeg" alt="geometric reasoning" width="100%"/>
-          <p> Overview of the MMMU dataset. MMMU presents four challenges: 1) <b>comprehensiveness</b>: 11.5K college-level problems across six broad disciplines and 30 college subjects; 
+          <p> Overview of the MTVQA dataset. MTVQA presents four challenges: 1) <b>comprehensiveness</b>: 11.5K college-level problems across six broad disciplines and 30 college subjects; 
             2) highly <b>heterogeneous</b> image types; 3) <b>interleaved</b> text and images; 4) <b>expert-level</b> perception and reasoning rooted in deep subject knowledge.</p>
         </div>
     </div>
@@ -288,7 +288,7 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce MMMU: a new benchmark designed to evaluate multimodal models on massive multi-discipline tasks demanding college-level subject knowledge and deliberate reasoning. MMMU includes <b>11.5K</b> meticulously collected multimodal questions from college exams, quizzes, and textbooks, covering six core disciplines: Art & Design, Business, Science, Health & Medicine, Humanities & Social Science, and Tech & Engineering. These questions span <b>30</b> subjects and <b>183</b> subfields, comprising 30 highly heterogeneous image types, such as charts, diagrams, maps, tables, music sheets, and chemical structures. Unlike existing benchmarks, MMMU focuses on advanced perception and reasoning with domain-specific knowledge, challenging models to perform tasks akin to those faced by experts. Our evaluation of 14 open-source LMMs and the proprietary GPT-4V(ision) highlights the substantial challenges posed by MMMU. Even the advanced GPT-4V only achieves a 56% accuracy, indicating significant room for improvement. We believe MMMU will stimulate the community to build next-generation multimodal foundation models towards expert artificial general intelligence.
+            We introduce MTVQA: a new benchmark designed to evaluate multimodal models on massive multi-discipline tasks demanding college-level subject knowledge and deliberate reasoning. MTVQA includes <b>11.5K</b> meticulously collected multimodal questions from college exams, quizzes, and textbooks, covering six core disciplines: Art & Design, Business, Science, Health & Medicine, Humanities & Social Science, and Tech & Engineering. These questions span <b>30</b> subjects and <b>183</b> subfields, comprising 30 highly heterogeneous image types, such as charts, diagrams, maps, tables, music sheets, and chemical structures. Unlike existing benchmarks, MTVQA focuses on advanced perception and reasoning with domain-specific knowledge, challenging models to perform tasks akin to those faced by experts. Our evaluation of 14 open-source LMMs and the proprietary GPT-4V(ision) highlights the substantial challenges posed by MTVQA. Even the advanced GPT-4V only achieves a 56% accuracy, indicating significant room for improvement. We believe MTVQA will stimulate the community to build next-generation multimodal foundation models towards expert artificial general intelligence.
           </p>
         </div>
       </div>
@@ -302,7 +302,7 @@
   <div class="hero-body has-text-centered">
   <h1 class="title is-1 mmmu">
     <img src="static/images/mmmu_icon2.png" style="width:1em;vertical-align: middle" alt="Logo"/>
-    <span class="mmmu" style="vertical-align: middle">MMMU Benchmark</span>
+    <span class="mmmu" style="vertical-align: middle">MTVQA Benchmark</span>
   </h1>
   </div>
 </section>
@@ -314,15 +314,15 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce the Massive Multi-discipline Multimodal Understanding and Reasoning (MMMU) benchmark, a novel benchmark meticulously curated to assess the expert-level multimodal understanding capability of foundation models across a broad scope of tasks. Covering subjects across disciplines, including Art, Business, Health & Medicine, Science, Humanities & Social Science, and Tech & Engineering, and over subfields. The detailed subject coverage and statistics are detailed in the figure. The questions in our benchmark were manually collected by a team of college students (including coauthors) from various disciplines and subjects, drawing from online sources, textbooks, and lecture materials.
+            We introduce the Massive Multi-discipline Multimodal Understanding and Reasoning (MTVQA) benchmark, a novel benchmark meticulously curated to assess the expert-level multimodal understanding capability of foundation models across a broad scope of tasks. Covering subjects across disciplines, including Art, Business, Health & Medicine, Science, Humanities & Social Science, and Tech & Engineering, and over subfields. The detailed subject coverage and statistics are detailed in the figure. The questions in our benchmark were manually collected by a team of college students (including coauthors) from various disciplines and subjects, drawing from online sources, textbooks, and lecture materials.
           </p>
           <img src="static/images/mmlu_example.Jpeg" alt="algebraic reasoning" class="center">
           <br>
           <p>
-             MMMU is designed to measure three essential skills in LMMs: perception, knowledge, and reasoning. Our aim is to evaluate how well these models can not only perceive and understand information across different modalities but also apply reasoning with subject-specific knowledge to derive the solution.
+             MTVQA is designed to measure three essential skills in LMMs: perception, knowledge, and reasoning. Our aim is to evaluate how well these models can not only perceive and understand information across different modalities but also apply reasoning with subject-specific knowledge to derive the solution.
           </p>
           <p>
-            Our MMMU benchmark introduces key challenges to multimodal foundation models, as detailed in a figure. Among these, we particularly highlight the challenge stemming from the requirement for both expert-level visual perceptual abilities and deliberate reasoning with subject-specific knowledge. This challenge is vividly illustrated through our tasks, which not only demand the processing of various heterogeneous image types but also necessitate a model's adeptness in using domain-specific knowledge to deeply understand both the text and images and to reason. This goes significantly beyond basic visual perception, calling for an advanced approach that integrates advanced multimodal analysis with domain-specific knowledge.
+            Our MTVQA benchmark introduces key challenges to multimodal foundation models, as detailed in a figure. Among these, we particularly highlight the challenge stemming from the requirement for both expert-level visual perceptual abilities and deliberate reasoning with subject-specific knowledge. This challenge is vividly illustrated through our tasks, which not only demand the processing of various heterogeneous image types but also necessitate a model's adeptness in using domain-specific knowledge to deeply understand both the text and images and to reason. This goes significantly beyond basic visual perception, calling for an advanced approach that integrates advanced multimodal analysis with domain-specific knowledge.
           </p>
 
           
@@ -345,7 +345,7 @@
         </p>
         <div class="content has-text-centered">
           <img src="static/images/compare.Jpeg" alt="algebraic reasoning" class="center">
-          <p> Sampled MMMU examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
+          <p> Sampled MTVQA examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
         </div>
           
           
@@ -360,19 +360,19 @@
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/mmmu_subject_distribution.Jpeg" alt="algebraic reasoning" width="95%"/>
-              <p> Sampled MMMU examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
+              <p> Sampled MTVQA examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/table4.Jpeg" alt="arithmetic reasoning" width="40%"/>
-              <p> Key statistics of the MMMU benchmark</p>
+              <p> Key statistics of the MTVQA benchmark</p>
             </div>
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/image_type_count.png" alt="arithmetic reasoning" width="80%"/>
-              <p> Distribution of image types in the MMMU dataset</p>
+              <p> Distribution of image types in the MTVQA dataset</p>
             </div>
           </div>
         </div>
@@ -403,7 +403,7 @@
               In each type, we consider both closed- and open-source models.
               Our evaluation is conducted under a zero-shot setting to assess the capability of models to generate accurate answers without fine-tuning or few-shot demonstrations on our benchmark.
               For all models, we use the default prompt provided by each model for multi-choice or open QA, if available.
-              If models do not provide prompts for task types in MMMU, we conduct prompt engineering on the validation set and use the most effective prompt for the later zero-shot experiment.
+              If models do not provide prompts for task types in MTVQA, we conduct prompt engineering on the validation set and use the most effective prompt for the later zero-shot experiment.
 
             </p>
           </div>
@@ -1895,7 +1895,7 @@
             </tr>
           </table>
           
-            <p> Overall results of different models on the MMMU test set. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
+            <p> Overall results of different models on the MTVQA test set. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
         </div>
       </div>
     </div>
@@ -2592,7 +2592,7 @@
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
     <pre><code>
       @inproceedings{yue2023mmmu,
-        title={MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI},
+        title={MTVQA: MTVQA: Benchmarking Multilingual Text-Centric Visual Question Answering},
         author={Xiang Yue and Yuansheng Ni and Kai Zhang and Tianyu Zheng and Ruoqi Liu and Ge Zhang and Samuel Stevens and Dongfu Jiang and Weiming Ren and Yuxuan Sun and Cong Wei and Botao Yu and Ruibin Yuan and Renliang Sun and Ming Yin and Boyuan Zheng and Zhenzhu Yang and Yibo Liu and Wenhao Huang and Huan Sun and Yu Su and Wenhu Chen},
         booktitle={Proceedings of CVPR},
         year={2024},
