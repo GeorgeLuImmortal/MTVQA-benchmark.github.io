@@ -208,10 +208,6 @@
           <img src="static/images/distribution_overview.png" alt="overview distribution" width="100%"/>
           <p> Left: overview of various categories of text-rich images. Right: image and QA pairs distribution over the 9 languages in MTVQA benchmark.</p>
         </div>
-        <div class="content has-text-centered">
-          <img src="static/images/annotation_process.png" alt="geometric reasoning" width="100%"/>
-          <p> A brief diagram of the annotation process.</p>
-        </div>
     </div>
   </div>
 </section>
@@ -224,16 +220,16 @@
         <h2 class="title is-3">🔔News</h2>
         <div class="content has-text-justified">
           <p>
-            <b>🚀[2024-01-31]: We are excited to launch MTVQA, the first multilingual visual text comprehension evaluation benchmark for MLLMs! MTVQA includes 9 widely-used but low-resource languages, i.t., AR, DE, FR, IT, JA, KO, RU, TH, and VI.</a>!🌟</b>
+            <b>🚀[2024-06-04]: We are excited to launch MTVQA, the first multilingual visual text comprehension evaluation benchmark for MLLMs! MTVQA includes 9 widely-used but low-resource languages, i.t., AR, DE, FR, IT, JA, KO, RU, TH, and VI.</a>!🌟</b>
           </p>
           <p>
-            <b>🔥[2023-12-04]: GPT-4o achieves the best performance overall, MiniCPM-V2.5 achieves the best performance among open-source models! 😆</b>
+            <b>🔥[2023-06-04]: GPT-4o achieves the best performance overall, MiniCPM-V2.5 achieves the best performance among open-source models! 😆</b>
           </p>
       </div>      
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce MTVQA: the first benchmark focusing on Text-Centric Visual Question Answering~(TEC-VQA), featuring high-quality human expert annotations across <b>9</b> diverse languages, consisting of <b>6,778</b> question-answer pairs across <b>2,116</b> images. A dedicated team of annotators meticulously created this large-scale dataset to ensure high fidelity and linguistic diversity. By comprehensively evaluating numerous state-of-the-art Multimodal Large Language Models~(MLLMs), including GPT-4o, GPT-4V, Claude3, and Gemini, on the MTVQA dataset, it is evident that there is still a large room for performance improvement, underscoring the value of MTVQA. Additionally, we supply multilingual training data within the MTVQA dataset, demonstrating that straightforward fine-tuning with this data can substantially enhance multilingual TEC-VQA performance. We aspire that MTVQA will offer the research community fresh insights and stimulate further exploration in multilingual visual text comprehension.
+            We introduce MTVQA: the first benchmark focusing on Text-Centric Visual Question Answering (TEC-VQA), featuring high-quality human expert annotations across <b>9</b> diverse languages, consisting of <b>6,778</b> question-answer pairs across <b>2,116</b> images. A dedicated team of annotators meticulously created this large-scale dataset to ensure high fidelity and linguistic diversity. By comprehensively evaluating numerous state-of-the-art Multimodal Large Language Models (MLLMs), including GPT-4o, GPT-4V, Claude3, and Gemini, on the MTVQA dataset, it is evident that there is still a large room for performance improvement, underscoring the value of MTVQA. Additionally, we supply multilingual training data within the MTVQA dataset, demonstrating that straightforward fine-tuning with this data can substantially enhance multilingual TEC-VQA performance. We aspire that MTVQA will offer the research community fresh insights and stimulate further exploration in multilingual visual text comprehension.
           </p>
         </div>
       </div>
@@ -259,19 +255,12 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce the Massive Multi-discipline Multimodal Understanding and Reasoning (MTVQA) benchmark, a novel benchmark meticulously curated to assess the expert-level multimodal understanding capability of foundation models across a broad scope of tasks. Covering subjects across disciplines, including Art, Business, Health & Medicine, Science, Humanities & Social Science, and Tech & Engineering, and over subfields. The detailed subject coverage and statistics are detailed in the figure. The questions in our benchmark were manually collected by a team of college students (including coauthors) from various disciplines and subjects, drawing from online sources, textbooks, and lecture materials.
+            We establish MTVQA, a novel and high-quality multilingual TEC-VQA benchmark, where all images are collected from real-world and meticulously annotated by human experts in nine languages: <b>Arabic (AR)</b>, <b>Korean (KO)</b>, <b>Japanese (JA)</b>, <b>Thai (TH)</b>, <b>Vietnamese (VI)</b>, <b></b>Russian (RU), <b>French (FR)</b>, <b>German (DE)</b>, and <b>Italian (IT)</b>. More concretely, to ensure the visual-textual alignment at most, the annotation process follows the raise-then-correct paradigm, where a group of human annotators raises several distinct questions, ranging from simple content extraction to text-related reasoning, and subsequently provides answers. Another group then double-checks these QA pairs to ensure accuracy and consistency. Consequently,  <b>6,678</b> training images and <b>21,829</b> question-answer pairs, as well as <b>2,116</b> test images and <b>6,778</b> question-answer pairs are obtained, covering more than 20 fine-grained scenarios from both documents and natural scenes, such as menus, logos, maps, bills, PPTs, research papers, and etc. To our knowledge, MTVQA is the first TEC-VQA dataset to provide native human annotations for multilingual text-rich scenarios, especially for low-source languages.
           </p>
-          <img src="static/images/mmlu_example.Jpeg" alt="algebraic reasoning" class="center">
-          <br>
-          <p>
-             MTVQA is designed to measure three essential skills in LMMs: perception, knowledge, and reasoning. Our aim is to evaluate how well these models can not only perceive and understand information across different modalities but also apply reasoning with subject-specific knowledge to derive the solution.
-          </p>
-          <p>
-            Our MTVQA benchmark introduces key challenges to multimodal foundation models, as detailed in a figure. Among these, we particularly highlight the challenge stemming from the requirement for both expert-level visual perceptual abilities and deliberate reasoning with subject-specific knowledge. This challenge is vividly illustrated through our tasks, which not only demand the processing of various heterogeneous image types but also necessitate a model's adeptness in using domain-specific knowledge to deeply understand both the text and images and to reason. This goes significantly beyond basic visual perception, calling for an advanced approach that integrates advanced multimodal analysis with domain-specific knowledge.
-          </p>
-
-          
-
+          <div class="content has-text-centered">
+            <img src="static/images/annotation_process.png" alt="anno process" width="100%"/>
+            <p> A brief diagram of the annotation process.</p>
+          </div>
         </div>
     </div>
     </div>
@@ -281,17 +270,9 @@
         <h2 class="title is-3">Comparisons with Existing Benchmarks</h2>
         <div class="content has-text-justified">
           <p>
-            To further distinguish the difference between <i>dataset</i> and other existing ones, we elaborate the benchmark details in Figure. 
-            From the <i>breadth</i> perspective, the prior benchmarks are heavily focused on daily knowledge and common sense. 
-            The covered image format is also limited. Our benchmark aims to cover college-level knowledge with 30 image formats including diagrams, 
-            tables, charts, chemical structures, photos, paintings, geometric shapes, music sheets, medical images, etc. 
-            In the <i>depth</i> aspect, the previous benchmarks normally require commonsense knowledge or simple physical or temporal reasoning. 
-            In contrast, our benchmark requires deliberate reasoning with college-level subject knowledge.
+             Compared with general VQA, TEC-VQA places greater emphasis on answering questions that require understanding textual information within images. It provides a streamlined avenue for individuals without specialized expertise to articulate their requirements and access applications in text-centric visual environments. However, the majority of advancements in TEC-VQA have predominantly concentrated on high-resource languages, e.g., English, Chinese, Japanese and etc., thus restricting the applicability of AI models to the global community, particularly populations speaking low-resource languages. To tackle the problem of language diversity, several seminal studies in the general VQA field, leverage off-the-shelf translation engines to expand existing question-answer pairs from high-resource languages to their multilingual counterparts including low-resource ones. However, when applied to TEC-VQA, this translation-based approach may fall prey to the ``visual-textual misalignment'' problem as only the text in question-answer pairs can be processed, while the visual text present in the images is overlooked. Although the visual text can be obtained by an OCR (Optical Character Recognition) engine and then translated into English, this indirect process could introduce issues such as nuanced meaning, contextual distortion, language bias, and question type diversity. These factors further render the transferability of the translation protocol infeasible for TEC-VQA. We coin the MTVQA dataset, which to the best of our knowledge is the first multilingual TEC-VQA benchmark providing human expert annotations to solve ``visual-textual misalignment'' problem in multilingual text-centric scenarios.
         </p>
-        <div class="content has-text-centered">
-          <img src="static/images/compare.Jpeg" alt="algebraic reasoning" class="center">
-          <p> Sampled MTVQA examples from each discipline. The questions and images need expert-level knowledge to understand and reason.</p>
-        </div>
+    
           
           
         </div>
