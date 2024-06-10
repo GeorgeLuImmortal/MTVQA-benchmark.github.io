@@ -201,19 +201,16 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
         <div class="content has-text-centered">
-          <img src="static/images/mtvqa_overview_examples.png" alt="geometric reasoning" width="100%"/>
-          <p> Overview of the MTVQA dataset. MTVQA presents four challenges: 1) <b>comprehensiveness</b>: 11.5K college-level problems across six broad disciplines and 30 college subjects; 
-            2) highly <b>heterogeneous</b> image types; 3) <b>interleaved</b> text and images; 4) <b>expert-level</b> perception and reasoning rooted in deep subject knowledge.</p>
+          <img src="static/images/mtvqa_overview_examples.png" alt="overview examples" width="100%"/>
+          <p> Multilingual text-centric VQA visualization selected from four languages. From left to right: Arabic (AR), Russian (RU), Thai (TH), Vietnamese (VI).</p>
         </div>
         <div class="content has-text-centered">
-          <img src="static/images/distribution_overview.png" alt="geometric reasoning" width="100%"/>
-          <p> Overview of the MTVQA dataset. MTVQA presents four challenges: 1) <b>comprehensiveness</b>: 11.5K college-level problems across six broad disciplines and 30 college subjects; 
-            2) highly <b>heterogeneous</b> image types; 3) <b>interleaved</b> text and images; 4) <b>expert-level</b> perception and reasoning rooted in deep subject knowledge.</p>
+          <img src="static/images/distribution_overview.png" alt="overview distribution" width="100%"/>
+          <p> Left: overview of various categories of text-rich images. Right: image and QA pairs distribution over the 9 languages in MTVQA benchmark.</p>
         </div>
         <div class="content has-text-centered">
           <img src="static/images/annotation_process.png" alt="geometric reasoning" width="100%"/>
-          <p> Overview of the MTVQA dataset. MTVQA presents four challenges: 1) <b>comprehensiveness</b>: 11.5K college-level problems across six broad disciplines and 30 college subjects; 
-            2) highly <b>heterogeneous</b> image types; 3) <b>interleaved</b> text and images; 4) <b>expert-level</b> perception and reasoning rooted in deep subject knowledge.</p>
+          <p> A brief diagram of the annotation process.</p>
         </div>
     </div>
   </div>
@@ -227,16 +224,16 @@
         <h2 class="title is-3">🔔News</h2>
         <div class="content has-text-justified">
           <p>
-            <b>🚀[2024-01-31]: We added Human Expert performance on the <a href="#leaderboard">Leaderboard</a>!🌟</b>
+            <b>🚀[2024-01-31]: We are excited to launch MTVQA, the first multilingual visual text comprehension evaluation benchmark for MLLMs! MTVQA includes 9 widely-used but low-resource languages, i.t., AR, DE, FR, IT, JA, KO, RU, TH, and VI.</a>!🌟</b>
           </p>
           <p>
-            <b>🔥[2023-12-04]: Our evaluation server for the test set is now available on <a href="https://eval.ai/web/challenges/challenge-page/2179/overview"><b>EvalAI</b></a>. We welcome all submissions and look forward to your participation! 😆</b>
+            <b>🔥[2023-12-04]: GPT-4o achieves the best performance overall, MiniCPM-V2.5 achieves the best performance among open-source models! 😆</b>
           </p>
       </div>      
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce MTVQA: a new benchmark designed to evaluate multimodal models on massive multi-discipline tasks demanding college-level subject knowledge and deliberate reasoning. MTVQA includes <b>11.5K</b> meticulously collected multimodal questions from college exams, quizzes, and textbooks, covering six core disciplines: Art & Design, Business, Science, Health & Medicine, Humanities & Social Science, and Tech & Engineering. These questions span <b>30</b> subjects and <b>183</b> subfields, comprising 30 highly heterogeneous image types, such as charts, diagrams, maps, tables, music sheets, and chemical structures. Unlike existing benchmarks, MTVQA focuses on advanced perception and reasoning with domain-specific knowledge, challenging models to perform tasks akin to those faced by experts. Our evaluation of 14 open-source LMMs and the proprietary GPT-4V(ision) highlights the substantial challenges posed by MTVQA. Even the advanced GPT-4V only achieves a 56% accuracy, indicating significant room for improvement. We believe MTVQA will stimulate the community to build next-generation multimodal foundation models towards expert artificial general intelligence.
+            We introduce MTVQA: the first benchmark focusing on Text-Centric Visual Question Answering~(TEC-VQA), featuring high-quality human expert annotations across <b>9</b> diverse languages, consisting of <b>6,778</b> question-answer pairs across <b>2,116</b> images. A dedicated team of annotators meticulously created this large-scale dataset to ensure high fidelity and linguistic diversity. By comprehensively evaluating numerous state-of-the-art Multimodal Large Language Models~(MLLMs), including GPT-4o, GPT-4V, Claude3, and Gemini, on the MTVQA dataset, it is evident that there is still a large room for performance improvement, underscoring the value of MTVQA. Additionally, we supply multilingual training data within the MTVQA dataset, demonstrating that straightforward fine-tuning with this data can substantially enhance multilingual TEC-VQA performance. We aspire that MTVQA will offer the research community fresh insights and stimulate further exploration in multilingual visual text comprehension.
           </p>
         </div>
       </div>
