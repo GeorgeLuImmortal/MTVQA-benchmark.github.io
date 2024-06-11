@@ -206,7 +206,7 @@
         </div>
         <div class="content has-text-centered">
           <img src="static/images/distribution_overview.png" alt="overview distribution" width="100%"/>
-          <p> Left: overview of various categories of text-rich images. Right: image and QA pairs distribution over the 9 languages in MTVQA benchmark.</p>
+          <p> <b>Left:</b> overview of various categories of text-rich images. <b>Right:</b> image and QA pairs distribution over the 9 languages in MTVQA benchmark.</p>
         </div>
     </div>
   </div>
@@ -351,7 +351,7 @@
             <p>
               We evaluate various models including LLMs and LMMs.
               In each type, we consider both closed- and open-source models.
-              We conduct the evaluation experiments over the baseline MLLMs with their default settings, ignoring the effect of generation configuration on the results. To make the output of MLLMs more evaluation-friendly, we design the following prompt format to limit the output length: "Answer the question using a word or phrase in the language of the question.  + <Question>", where "<Question>" represents the actual question from the MTVQA test set. This approach aims to make the answers as concise as possible. Besides, InternLM-Xcomposer2-4KHD is chosen as the base model for an instruction tuning experiment on the MTVQA training set.
+              We conduct the evaluation experiments over the baseline MLLMs with their default settings, ignoring the effect of generation configuration on the results. To make the output of MLLMs more evaluation-friendly, we design the following prompt format to limit the output length: "Answer the question using a word or phrase in the language of the question.  + [Question]", where "[Question]" represents the actual question from the MTVQA test set. This approach aims to make the answers as concise as possible. Besides, InternLM-Xcomposer2-4KHD is chosen as the base model for an instruction tuning experiment on the MTVQA training set.
             </p>
           </div>
 
@@ -594,6 +594,24 @@
             </tr>
             <tr style="background-color: rgba(249, 242, 248, 1);">
               <td style="text-align: left;">
+                <a href="https://arxiv.org/abs/2403.18814">
+                    <b>Mini-Gemini-HD-34B</b>
+                </a>
+              </td>
+              <td>-</td>
+              <td>13.0</td>
+              <td>2.2</td>
+              <td>25.0</td>
+              <td>29.2</td>
+              <td>25.5</td>
+              <td>6.1</td>
+              <td>8.6</td>
+              <td>4.1</td>
+              <td>4.3</td>
+              <td>11.8</td>
+            </tr>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">
                 <a href="https://arxiv.org/abs/2404.06512">
                     <b>Xcomposer2-4KHD</b>
                 </a>
@@ -610,10 +628,121 @@
               <td>6.1</td>
               <td>10.1</td>
             </tr>
-    
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">
+                <a href="https://github.com/LLaVA-VL/LLaVA-NeXT">
+                    <b>Llava-Next-34B</b>
+                </a>
+              </td>
+              <td>-</td>
+              <td>11.1</td>
+              <td>3.3</td>
+              <td>24.0</td>
+              <td>28.0</td>
+              <td>22.3</td>
+              <td>3.6</td>
+              <td>6.1</td>
+              <td>2.6</td>
+              <td>0.4</td>
+              <td>9.8</td>
+            </tr>
+            <tr style="background-color: rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">
+                <a href="https://arxiv.org/abs/2403.04473">
+                    <b>TextMonkey</b>
+                </a>
+              </td>
+              <td>-</td>
+              <td>9.9</td>
+              <td>2.0</td>
+              <td>18.1</td>
+              <td>19.9</td>
+              <td>22.1</td>
+              <td>4.6</td>
+              <td>7.2</td>
+              <td>3.2</td>
+              <td>0.9</td>
+              <td>11.1</td>
+            </tr>
+            <tr style="background-color:  rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">
+                <a href="https://arxiv.org/abs/2308.12038">
+                    <b>MiniCPM-V 2.0</b>
+                </a>
+              </td>
+              <td>-</td>
+              <td>7.4</td>
+              <td>1.3</td>
+              <td>12.7</td>
+              <td>14.9</td>
+              <td>17.0</td>
+              <td>3.7</td>
+              <td>5.6</td>
+              <td>2.2</td>
+              <td>2.2</td>
+              <td>6.8</td>
+            </tr>
+            <tr style="background-color:  rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">
+                <a href="https://arxiv.org/abs/2403.18814">
+                    <b>mPLUG-DocOwl 1.5</b>
+                </a>
+              </td>
+              <td>-</td>
+              <td>7.2</td>
+              <td>1.0</td>
+              <td>13.9</td>
+              <td>14.9</td>
+              <td>18.2</td>
+              <td>2.9</td>
+              <td>5.0</td>
+              <td>2.0</td>
+              <td>0.9</td>
+              <td>6.4</td>
+            </tr>
+            <tr style="background-color:  rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">
+                <a href="https://arxiv.org/abs/2403.18814">
+                    <b>YI-VL-34B</b>
+                </a>
+              </td>
+              <td>-</td>
+              <td>6.8</td>
+              <td>1.7</td>
+              <td>13.5</td>
+              <td>15.7</td>
+              <td>12.1</td>
+              <td>4.8</td>
+              <td>5.2</td>
+              <td>0.8</td>
+              <td>3.5</td>
+              <td>4.1</td>
+            </tr>
+            <tr style="background-color:  rgba(249, 242, 248, 1);">
+              <td style="text-align: left;">
+                <a href="https://arxiv.org/abs/2403.05525">
+                    <b>DeepSeek-VL</b>
+                </a>
+              </td>
+              <td>-</td>
+              <td>6.6</td>
+              <td>0.6</td>
+              <td>14.2</td>
+              <td>15.3</td>
+              <td>15.2</td>
+              <td>2.9</td>
+              <td>3.8</td>
+              <td>1.6</td>
+              <td>0.9</td>
+              <td>5.2</td>
+            </tr>
           </table>
           
-            <p> Overall results of different models on the MTVQA test set. The best-performing model in each category is <b>in-bold</b>, and the second best is <u>underlined</u>. *: results provided by the authors.</p>
+            <p> Overall results of different models on the MTVQA test set. The best-performing model in each category is <b>in-bold</b>. The performance is measured using accuray.</p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="static/images/overview_performance.png" alt="perf" width="80%"/>
+          <p> <b>Left:</b> comparison of the overall performance of various MLLMs in the MTVQA benchmark. <b>Right:</b> comparison of the performance exhibited by MLLMs in the 9 languages of the MTVQA.</p>
         </div>
       </div>
     </div>
