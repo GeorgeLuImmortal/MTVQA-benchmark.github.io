@@ -269,9 +269,22 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Comparisons with Existing Benchmarks</h2>
         <div class="content has-text-justified">
-          <p>
-             Compared with general VQA, TEC-VQA places greater emphasis on answering questions that require understanding textual information within images. It provides a streamlined avenue for individuals without specialized expertise to articulate their requirements and access applications in text-centric visual environments. However, the majority of advancements in TEC-VQA have predominantly concentrated on high-resource languages, e.g., English, Chinese, Japanese and etc., thus restricting the applicability of AI models to the global community, particularly populations speaking low-resource languages. To tackle the problem of language diversity, several seminal studies in the general VQA field, leverage off-the-shelf translation engines to expand existing question-answer pairs from high-resource languages to their multilingual counterparts including low-resource ones. However, when applied to TEC-VQA, this translation-based approach may fall prey to the "visual-textual misalignment" problem as only the text in question-answer pairs can be processed, while the visual text present in the images is overlooked. Although the visual text can be obtained by an OCR (Optical Character Recognition) engine and then translated into English, this indirect process could introduce issues such as nuanced meaning, contextual distortion, language bias, and question type diversity. These factors further render the transferability of the translation protocol infeasible for TEC-VQA. We coin the MTVQA dataset, which to the best of our knowledge is the first multilingual TEC-VQA benchmark providing human expert annotations to solve "visual-textual misalignment" problem in multilingual text-centric scenarios.
-        </p>
+          <ul>
+            <li><strong>MTVQA vs. General VQA Benchmarks:</strong>
+              <ul>
+                <li>MTVQA focuses specifically on multilingual text-centric visual question answering, addressing the "visual-textual misalignment" problem.</li>
+                <li>General VQA benchmarks primarily focus on visual questions that do not necessarily require understanding textual information within images.</li>
+                <li>MTVQA provides human expert annotations for multilingual text-centric scenarios, ensuring accurate and contextually appropriate translations.</li>
+              </ul>
+            </li>
+            <li><strong>MTVQA vs. TEC-VQA Benchmarks:</strong>
+              <ul>
+                <li>MTVQA targets a wider range of languages, including low-resource languages, unlike most TEC-VQA benchmarks that concentrate on high-resource languages (e.g., English, Chinese, Japanese).</li>
+                <li>MTVQA addresses the limitations of translation-based approaches in TEC-VQA, such as nuanced meaning loss, contextual distortion, language bias, and question type diversity.</li>
+                <li>MTVQA integrates human expert annotations to resolve the "visual-textual misalignment" problem, whereas other TEC-VQA benchmarks often rely on off-the-shelf translation engines.</li>
+              </ul>
+            </li>
+          </ul>
     
           
           
@@ -303,7 +316,7 @@
           </div>
           <div class="box m-5">
             <div class="content has-text-centered">
-              <img src="static/images/word_cloud_qs.png" alt="stat word cloud as" width="80%"/>
+              <img src="static/images/word_cloud_ans.png" alt="stat word cloud as" width="80%"/>
               <p> Word clouds showcasing top answers in various languages, tokenized via NLTK with removing stop words, punctuation, and digits.</p>
             </div>
           </div>
