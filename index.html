@@ -351,10 +351,7 @@
             <p>
               We evaluate various models including LLMs and LMMs.
               In each type, we consider both closed- and open-source models.
-              Our evaluation is conducted under a zero-shot setting to assess the capability of models to generate accurate answers without fine-tuning or few-shot demonstrations on our benchmark.
-              For all models, we use the default prompt provided by each model for multi-choice or open QA, if available.
-              If models do not provide prompts for task types in MTVQA, we conduct prompt engineering on the validation set and use the most effective prompt for the later zero-shot experiment.
-
+              We conduct the evaluation experiments over the baseline MLLMs with their default settings, ignoring the effect of generation configuration on the results. To make the output of MLLMs more evaluation-friendly, we design the following prompt format to limit the output length: "Answer the question using a word or phrase in the language of the question.  + <Question>", where "<Question>" represents the actual question from the MTVQA test set. This approach aims to make the answers as concise as possible. Besides, InternLM-Xcomposer2-4KHD is chosen as the base model for an instruction tuning experiment on the MTVQA training set.
             </p>
           </div>
 
